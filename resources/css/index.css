@@ -1,6 +1,6 @@
 *{
     background-color: #E8E8E8;
-    
+    font-family: "roboto";
 }
 
 /* making the navbar */
@@ -16,14 +16,27 @@
 .navbar-nav{
     margin-right: 2rem;
 }
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #2D45FF;
+    }
+
 /* header and first page */
+
 h1{
     font-family: "roboto";
     font-weight: bold;
+    font-size: 4rem;
+    letter-spacing: .3rem;
 }
 
 img{
-    background-color: E8E8E8;
+    background-color: transparent;
+    position: relative;
+    
+    
+    
+    
 }
 
 .navbar-toggler:focus,
@@ -32,3 +45,66 @@ img{
     outline: none;
     box-shadow: none;
 }
+
+.intro{
+    margin-top: 6.8rem; 
+    
+}
+
+
+
+/* fixing some sizing on first page */
+@media only screen and (max-width:768px){
+    .intro{
+        margin-top: 30px;
+        
+    }
+    .navbar-brand span{
+        display: none;
+    }
+    .intro-img{
+        width: 100%;
+        position: relative;
+        
+    }
+    .container {
+        position: relative;
+        
+      }
+      .centered {
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        font-size: 3rem;
+        color: white;
+
+      }
+
+     section p{
+          position: absolute;
+         text-align: center;
+          font-size: 1.3rem;
+          border-bottom: 2rem solid white ;
+          margin-bottom: 2rem;
+          top: 99%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-bottom: 1.75rem;
+      }
+
+}
+/* shapes on first page */
+
+.circle1{
+    width: 200px;
+  height: 200px;
+  background: red;
+  border-radius: 50%;
+  position: relative;
+  left:200px;
+  bottom: 65px;
+  
+}
+

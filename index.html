@@ -21,9 +21,9 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light p-4">
+      <nav class="navbar navbar-expand-lg navbar-light p-4 fixed-top mt-0">
         <div class="container-fluid">
-          <a class="navbar-brand " href="#">
+          <a class="navbar-brand" href="#">
             <img
               src="/docs/5.1/assets/brand/bootstrap-logo.svg"
               alt=""
@@ -31,7 +31,7 @@
               height="24"
               class="d-inline-block align-text-top"
             />
-            Seth Yates Portfolio</a
+            <span>Seth Yates Portfolio</span></a
           >
           <button
             class="navbar-toggler"
@@ -48,18 +48,35 @@
             <div class="navbar-nav ms-auto">
               <a class="nav-link active mx-lg-4" href="#">About</a>
               <a class="nav-link active mx-lg-4" href="#">Work</a>
-              <a class="nav-link active mx-lg-4">Contact</a>
+              <a class="nav-link active mx-lg-4" href="#">Contact</a>
             </div>
           </div>
         </div>
       </nav>
-      <article>
-          <img src="resources/photos/263380712_1326499997763607_2561569042020727218_n.png" alt="picture of laptop with project"/>
-        <h1>
-          Hi <br />
-          I'm Seth
-        </h1>
-        <p>I am a web developer<br> in New England,<br> looking to improve my skills at a company</p>
+
+      <article class="container-fluid">
+        <div class="row align-items-center">
+          <div class="circle1 col-md-0 col-xl-1"></div>
+
+          <img
+            class="col-xl-5 col-lg-6 col-md-4 intro intro-img"
+            src="resources/photos/263380712_1326499997763607_2561569042020727218_n.png"
+            alt="picture of laptop with project"
+          />
+
+          <section class="intro col flex-shrink-1">
+            <h1 class="centered">
+              <div>Hi</div>
+              I'm Seth
+            </h1>
+            <p>
+              I am a New England web developer, <br />looking to provide my
+              skills for you.
+            </p>
+          </section>
+          <!-- decorative shapes on first page -->
+          
+        </div>
       </article>
     </header>
     <main></main>
