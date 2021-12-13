@@ -29,6 +29,10 @@ h2 {
   font-size: 4rem;
   letter-spacing: 0.3rem;
 }
+h3{
+  font-size: 18px;
+  font-weight: bold;
+}
 
 img {
   background-color: transparent;
@@ -43,7 +47,7 @@ img {
 }
 
 .intro {
-  margin-top: 6.8rem;
+  margin-top: 3.15rem;
 }
 
 /* fixing some sizing on first page */
@@ -81,9 +85,13 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     padding-bottom: 1.75rem;
+
+    
   }
 }
 
+
+/* about me */
 .myimage {
   height: 325px;
   width: 325px;
@@ -91,5 +99,27 @@ img {
   background-color: blue;
 }
 .about-me {
-  margin-top: 15rem;
+  margin-top: 8rem;
 }
+
+/* skills */
+
+
+.skills{
+  height: 200px;
+  width: 200px;
+  background-color: transparent;
+}
+
+.skill{
+  margin-top: 10rem;
+  background-color: black;
+  
+}
+.css-logo{
+  margin-top: 16px;
+  height: 170px;
+  width: 170px;
+}
+
+
