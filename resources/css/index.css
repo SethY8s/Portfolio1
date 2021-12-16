@@ -29,7 +29,7 @@ h2 {
   font-size: 4rem;
   letter-spacing: 0.3rem;
 }
-h3{
+h3 {
   font-size: 18px;
   font-weight: bold;
 }
@@ -38,7 +38,7 @@ img {
   background-color: transparent;
   position: relative;
 }
-
+/* got rid of glitch that made hamburger menu bad */
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -47,10 +47,25 @@ img {
 }
 
 .intro {
-  margin-top: 3.15rem;
+  margin-top: 3.25rem;
 }
 
 /* fixing some sizing on first page */
+
+.about-me {
+  margin-top: 8rem;
+}
+@media only screen and (max-width: 950px){
+  .intro{
+    margin-top: 6rem;
+  }
+  
+
+    }
+  
+
+
+
 @media only screen and (max-width: 768px) {
   .intro {
     margin-top: 30px;
@@ -60,19 +75,22 @@ img {
   }
   .intro-img {
     width: 100%;
-    position: relative;
+    display: none;
   }
-  .container {
-    position: relative;
-  }
+
   .centered {
-    position: absolute;
-    top: 47%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: transparent;
+    display: flex;
+    height: 400px;
     font-size: 3rem;
     color: white;
+    text-align: center;
+    margin-top: 2.5rem;
+    background-image: url(../photos/263380712_1326499997763607_2561569042020727218_n.png);
+    background-size: cover;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
   }
 
   section p {
@@ -85,11 +103,20 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     padding-bottom: 1.75rem;
+  }
 
-    
+  
+  .about-me {
+    margin-top: 55rem;
   }
 }
-
+/* just to fix opening page on smaller screens */
+@media only screen and (max-width: 600px) {
+  .centered{
+    margin-top: 0rem;
+  }
+  
+}
 
 /* about me */
 .myimage {
@@ -98,28 +125,29 @@ img {
   border-radius: 50%;
   background-color: blue;
 }
-.about-me {
-  margin-top: 8rem;
-}
+/* .about-me {
+  margin-top: 30rem;
+} */
 
 /* skills */
 
-
-.skills{
-  height: 200px;
-  width: 200px;
+.skills {
+  height: 125px;
+  width: 125px;
   background-color: transparent;
 }
 
-.skill{
+.skill {
   margin-top: 10rem;
   background-color: black;
-  
 }
-.css-logo{
-  margin-top: 16px;
-  height: 170px;
-  width: 170px;
+.css-logo {
+  margin-top: 12px;
+  height: 105px;
+  width: 105px;
 }
 
-
+.penis{
+  margin-left: 10rem;
+  display: inline;
+}
