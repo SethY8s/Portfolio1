@@ -55,16 +55,11 @@ img {
 .about-me {
   margin-top: 8rem;
 }
-@media only screen and (max-width: 950px){
-  .intro{
+@media only screen and (max-width: 950px) {
+  .intro {
     margin-top: 6rem;
   }
-  
-
-    }
-  
-
-
+}
 
 @media only screen and (max-width: 768px) {
   .intro {
@@ -105,17 +100,15 @@ img {
     padding-bottom: 1.75rem;
   }
 
-  
   .about-me {
     margin-top: 55rem;
   }
 }
 /* just to fix opening page on smaller screens */
 @media only screen and (max-width: 600px) {
-  .centered{
+  .centered {
     margin-top: 0rem;
   }
-  
 }
 
 /* about me */
@@ -123,7 +116,6 @@ img {
   height: 325px;
   width: 325px;
   border-radius: 50%;
-  background-color: blue;
 }
 /* .about-me {
   margin-top: 30rem;
@@ -146,8 +138,38 @@ img {
   height: 105px;
   width: 105px;
 }
-
-.penis{
-  margin-left: 10rem;
-  display: inline;
+.about-me {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24rem;
 }
+
+.about-me h2 {
+  margin-top: 6rem;
+}
+.myimage p {
+  width: 350px;
+  margin-bottom: 6rem;
+}
+/* carousel */
+.carousel-image{
+  width:48%;
+  margin: 10em 0em 0em 10em;
+  position: relative;
+  z-index: 10;
+}
+
+.carousel-caption h5{
+  font-size: 5em;
+  color: black;
+  font-family:  'roboto';
+  font-weight: 700;
+}
+.penis{
+  opacity: 0;
+}
+
+
+
+/* end of carousel */
