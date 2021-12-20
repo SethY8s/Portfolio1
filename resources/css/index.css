@@ -23,7 +23,8 @@
 /* header and first page */
 
 h1,
-h2 {
+h2,
+h4 {
   font-family: 'roboto';
   font-weight: bold;
   font-size: 4rem;
@@ -166,8 +167,14 @@ img {
   font-family:  'roboto';
   font-weight: 700;
 }
-.penis{
+.fake-image{
   opacity: 0;
+}
+.project-image{
+  width:60%;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon, .carousel-control-next{
+color:#01126B;
 }
 
 

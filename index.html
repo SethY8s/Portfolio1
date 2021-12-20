@@ -21,7 +21,6 @@
   </head>
   <body>
     <header>
-      <!-- navbar -->
       <nav class="navbar navbar-expand-lg navbar-light p-4 fixed-top mt-0">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -54,10 +53,9 @@
           </div>
         </div>
       </nav>
-      <!-- end of navbar -->
     </header>
 
-    <article class="container-fluid">
+    <main class="container-fluid">
       <div class="row align-items-center first-page intro">
         <div class="col-xl-1"></div>
 
@@ -77,17 +75,18 @@
             for you.
           </p>
         </section>
-        
       </div>
-      <main>
-        <!-- about me -->
+
       <div class="about-me">
         <h2>About <br />Me</h2>
 
         <div class="d-flex flex-column justify-content-start myimage">
-          <img src="./resources/photos/photo.jpg" alt="my photo" class="myimage    ">
+          <img
+            src="./resources/photos/photo.jpg"
+            alt="my photo"
+            class="myimage"
+          />
 
-          <!-- <span class="col-auto m-5">sads</span> -->
           <p class="text-center">
             Hi, I'm Seth, a self taught web developer. After a Thermodyanics II
             coding final in my third year of college, I realized coding and web
@@ -99,14 +98,9 @@
           </p>
         </div>
       </div>
-      <!-- end of about me -->
 
-
-<!-- skills -->
       <div class="skill">
-        <div class="row justify-content-center    ">
-
-          
+        <div class="row justify-content-center">
           <h3 class="col-1">Skills</h3>
         </div>
         <div class="row justify-content-center">
@@ -142,63 +136,131 @@
           />
         </div>
       </div>
-      <!-- end of skills -->
-      
-<!-- carousel  -->
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      
-      <img src="./resources/photos/263380712_1326499997763607_2561569042020727218_n.png" class="d-block w-100 penis" alt="...">
-    
-      <div class="carousel-caption d-md-block">
-        <div class="d-flex justify-content-center align-items-center">
-        <img src="./resources/photos/263380712_1326499997763607_2561569042020727218_n.png" class="w-50"alt="">
-        <div class="d-flex flex-column">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-        <button>Show More</button>
-      </div>
-      </div>
-      </div>
-    </div>
-    <!-- <div class="carousel-item"> -->
-      <!-- <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div> -->
-  <!-- </div> -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-      <!-- end carousel -->
-
-    </article>
-
-    
-
     </main>
-    <footer></footer>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./resources/photos/263380712_1326499997763607_2561569042020727218_n.png"
+            class="d-block w-50 fake-image"
+          />
+          <div class="carousel-caption d-md-block">
+            <div class="d-flex align-items-center">
+              <img
+                src="./resources/photos/263380712_1326499997763607_2561569042020727218_n.png"
+                class="project-image"
+                alt=""
+              />
+              <div class="d-flex flex-column align-items-start">
+                <h5 class="text-start">Project<br />One</h5>
+                <p class="text-start">
+                  A html based website with css and bootstrap.<br />adhuasdnkjasknd
+                </p>
+                <button>See More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./resources/photos/263380712_1326499997763607_2561569042020727218_n.png"
+            class="d-block w-50 fake-image"
+            alt="..."
+          />
+          <div class="carousel-caption d-md-block">
+            <div class="d-flex align-items-center">
+              <img
+                src="./resources/photos/263380712_1326499997763607_2561569042020727218_n.png"
+                class="project-image"
+                alt=""
+              />
+              <div class="d-flex flex-column align-items-start">
+                <h5 class="text-start">Project<br />Two</h5>
+                <p class="text-start">
+                  A html based website with css and bootstrap.<br />adhuasdnkjasknd
+                </p>
+                <button>See More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./resources/photos/263380712_1326499997763607_2561569042020727218_n.png"
+            class="d-block w-50 fake-image"
+            alt="..."
+          />
+          <div class="carousel-caption d-md-block">
+            <div class="d-flex align-items-center">
+              <img
+                src="./resources/photos/263380712_1326499997763607_2561569042020727218_n.png"
+                class="project-image"
+                alt=""
+              />
+              <div class="d-flex flex-column align-items-start">
+                <h5 class="text-start">Project<br />Three</h5>
+                <p class="text-start">
+                  A html based website with css and bootstrap.<br />adhuasdnkjasknd
+                </p>
+                <button class="button">See More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <footer>
+      <h4>
+        Contact<br />
+        Me
+      </h4>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
