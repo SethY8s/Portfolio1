@@ -1,3 +1,4 @@
+const { request } = require('express');
 const express = require('express');
 const app = express();
 const nodemailer = require('nodemailer');
@@ -23,7 +24,24 @@ app.post('/', (req, res)=>{
         service: 'gmail',
         auth: {
             user: process.env.user,
-            pass: process.env.pass
+            pass: process.env.pass  
+        }
+    })
+
+    const mailOptions = {
+        from: req.body.email,
+        to: process.env.user,
+        subject: `message from ${req.body.email}: ${req.body.subject}`,
+        text: req.body.message
+    }
+
+    transporter.sendMail(mailOptions, (error, info)=>{
+        if(error){
+            console.log(error);
+            res.send('error')
+        }else{
+            console.log('Email Sent ' + info.response);
+            res.send('success')
         }
     })
 })

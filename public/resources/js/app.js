@@ -24,7 +24,7 @@ xhr.open('POST', '/');
 xhr.setRequestHeader('content-type', 'application/json');
 xhr.onload = function(){
     console.log(xhr.responseText);
-    if(xhr.responseText == 'success'){
+    if(xhr.responseText === 'success'){
         alert('Email sent');
         name1.value = '';
         email.value = '';
