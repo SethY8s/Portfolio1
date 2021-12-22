@@ -180,3 +180,13 @@ color:#01126B;
 
 
 /* end of carousel */
+
+/* contact me */
+
+input,
+textarea{
+  margin-top: 1rem;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
