@@ -190,3 +190,15 @@ textarea{
   border-bottom: 1px solid black;
 }
 
+
+
+
+.icons a img{
+  height: 25px;
+  width: 25px;
+  position: relative;
+  top: .3rem;
+  right: .5rem;
+}
+
+
